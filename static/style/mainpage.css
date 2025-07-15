@@ -3,6 +3,14 @@ body {
   font-family: Arial, sans-serif;
 }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -80,7 +88,7 @@ h1 {
   
 p {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.5;
   width: 800px;
   margin-left: auto;
