@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  position: sticky;
+  padding: 15px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+  color: #333;
+  background-color: #ffffff;
+}
+
+.nav-bottom {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 15px 0;
+}
+
+.nav-bottom-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bottom-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+
+}
+
+.nav-bottom-links li a:hover {
+  text-decoration: underline;
+  position: relative;
+  animation-name: arrow-right;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes arrow-right {
+  from {left: 0px;}
+  to {left: 5px;}
+
+}
+
+body {
+  background-color: #e9cd71;
+  font-family: "Audiowide", sans-serif;
+  margin: 40px;
+}
+
+h1 {
+   text-align: center;
+}
+  
+p {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.5;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-family: "Audiowide", sans-serif;
+}
