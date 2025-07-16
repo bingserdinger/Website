@@ -3,12 +3,21 @@ body {
   font-family: Arial, sans-serif;
 }
 
-#myVideo {
+video {
   position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: -50;
   min-width: 100%; 
   min-height: 100%;
+}
+
+.position {
+  position: fixed;
+  bottom: 0;
+  background: #e9cd71;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
 
 .navbar {
@@ -17,6 +26,9 @@ body {
   background-color: #333;
   position: sticky;
   padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-links {
@@ -61,7 +73,7 @@ body {
 
 }
 
-.nav-bottom-links li a:hover {
+#arrow-right li a:hover{
   text-decoration: underline;
   position: relative;
   animation-name: arrow-right;
@@ -70,16 +82,28 @@ body {
   animation-timing-function: ease-out;
 }
 
+#arrow-left li a:hover {
+  text-decoration: underline;
+  position: relative;
+  animation-name: arrow-left;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
 @keyframes arrow-right {
   from {left: 0px;}
   to {left: 5px;}
+}
 
+@keyframes arrow-left {
+  from {right: 0px;}
+  to {right: 5px;}
 }
 
 body {
   background-color: #e9cd71;
   font-family: "Audiowide", sans-serif;
-  margin: 40px;
 }
 
 h1 {
