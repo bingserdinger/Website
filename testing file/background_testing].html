@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stack Images</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+	body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	}
+
+	.image-container {
+	position: relative; /* This will be the reference for absolute positioning */
+	width: 100%; /* Adjust as needed */
+	height: 100vh; /* Full screen height */
+	}
+
+	.image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%; /* Adjust as needed */
+	height: 100%; /* Adjust as needed */
+	}
+
+	.image1 {
+	z-index: 1; /* Image 1 will be on top */
+	}
+
+	.image2 {
+	z-index: 0; /* Image 2 will be behind */
+	}
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="\static\images\mindustry_logo.png" alt="Image 1" class="image image1">
+    <img src="\static\images\Titanium.png" alt="Image 2" class="image image2">
+  </div>
+</body>
+</html>
+
