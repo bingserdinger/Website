@@ -33,7 +33,7 @@ body {
 
 .position {
   margin-top: 750px;
-  background: #e9cd71;
+  background: #9b8746;
   width: 100%;
   padding: 20px;
   position: relative;
@@ -126,7 +126,7 @@ body {
 }
 
 body {
-  background-color: #e9cd71;
+  background-color: #9b8746;
   font-family: "Audiowide", sans-serif;
 }
 
@@ -136,7 +136,7 @@ h1 {
   
 p {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.5;
   width: 800px;
   margin-left: auto;
