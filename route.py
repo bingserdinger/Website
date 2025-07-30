@@ -5,7 +5,7 @@ app = Flask(__name__, static_url_path='/static')
 # basic route
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route('/tutorial')
 def tutorial():
