@@ -24,7 +24,7 @@ def keybinds():
     return render_template('keybinds.html')
 
 @app.route('/download')
-def about():
+def download():
     return render_template('download.html')
 
 
