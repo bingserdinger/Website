@@ -64,16 +64,29 @@ body {
   margin: 0;
 }
 
+.nav-links li {
+  background-color: #444; 
+  border-radius: 8px; 
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
 .nav-links li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
+  display: block; 
+}
+
+.nav-links li:hover {
+  background-color: #555; 
+  transform: translateY(-2px); 
 }
 
 .nav-links li a:hover {
-  text-decoration: underline;
   color: #333;
   background-color: #ffffff;
+  border-radius: 8px;
 }
 
 .nav-bottom {
@@ -91,13 +104,32 @@ body {
   margin: 0;
 }
 
+.nav-bottom-links li {
+  background-color: #444; 
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
 .nav-bottom-links li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
+  display: block;
 }
 
-#arrow-right li a:hover{
+.nav-bottom-links li:hover {
+  background-color: #555; 
+  transform: translateY(-2px); 
+}
+
+.nav-bottom-links li a:hover {
+  color: #333;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+#arrow-right li a:hover {
   text-decoration: underline;
   position: relative;
   animation-name: arrow-right;
@@ -116,13 +148,13 @@ body {
 }
 
 @keyframes arrow-right {
-  from {left: 0px;}
-  to {left: 5px;}
+  from { left: 0px; }
+  to { left: 5px; }
 }
 
 @keyframes arrow-left {
-  from {right: 0px;}
-  to {right: 5px;}
+  from { right: 0px; }
+  to { right: 5px; }
 }
 
 body {
@@ -138,7 +170,7 @@ p {
   color: #ffffff;
   font-size: 18px;
   line-height: 1.5;
-  width: 800px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
