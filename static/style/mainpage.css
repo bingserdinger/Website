@@ -14,24 +14,43 @@ body {
 }
 
 #backgroundVideo {
-  width: auto; /* Desired width */
-  height: auto; /* Desired height */
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   position: fixed;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.1s ease-out; 
+}
+
 .logo-overlay {
-  width: 1000px;
+  width: 900px;
   height: auto;
   position: fixed;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; width: 800px; top:40%; }
+  to   { opacity: 1; width: 900px; top:55%; }
 }
 
 .position {
@@ -135,13 +154,14 @@ body {
   border-radius: 8px;
 }
 
-#arrow-right li a:hover {
+.arrow-right{
+  transition: left 4s;
+}
+
+.arrow-right li a:hover {
   text-decoration: underline;
   position: relative;
-  animation-name: arrow-right;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
+  left: 5px;
 }
 
 #arrow-left li a:hover {
@@ -151,16 +171,6 @@ body {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
-}
-
-@keyframes arrow-right {
-  from { left: 0px; }
-  to { left: 5px; }
-}
-
-@keyframes arrow-left {
-  from { right: 0px; }
-  to { right: 5px; }
 }
 
 body {
