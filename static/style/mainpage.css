@@ -167,10 +167,7 @@ body {
 #arrow-left li a:hover {
   text-decoration: underline;
   position: relative;
-  animation-name: arrow-left;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
+  left: 5px;
 }
 
 body {
